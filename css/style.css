@@ -65,7 +65,7 @@ position: relative;
     max-width: 500px;
     left: 15%;
     position: absolute;
-    top: 30%;
+    top: 40px;
 }
 .fnt-weight500{
     font-weight: 500px;
@@ -352,7 +352,7 @@ h4{
 .foto-descripcion:hover{
     opacity: 1;
 }
-.btn-green{
+.boton-green{
     background-color: var(--color4);
     color: #fff;
     padding: 16px 34px;
@@ -363,9 +363,12 @@ h4{
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-.btn-green:hover{
+.boton-green:hover{
     background-color: var(--color5);
     color: #fff;
+}
+.mrg-top10{
+    margin-top: 10px;
 }
 .mrg-top20{
     margin-top: 20px;
@@ -376,10 +379,10 @@ h4{
 .marg-auto{
     margin: auto;
 }
-.pdg-top40{
+.padding-top40{
     padding-top: 40px;
 }
-.btn-blue{
+.boton-blue{
     background-color: var(--color2);
     color: #fff;
     padding: 16px 34px;
@@ -390,7 +393,7 @@ h4{
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-.btn-blue:hover{
+.boton-blue:hover{
     background-color: var(--color3);
     color: #fff;
 }
