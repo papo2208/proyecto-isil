@@ -1,0 +1,454 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap'); /*font-family: 'Open Sans', sans-serif;*/
+/* @import url('css/all.min.css'); */
+:root{
+    --color1: #545454;
+    --color2: #1565c0;
+    --color3: #104d92;
+    --color4: #8bc34a;
+    --color5: #3f9c00;;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+
+}
+
+body{/* Hace referencia a todo el contenido de la página web */
+    font-size: 16px;
+    margin: 0; /* Elimina el margen por defecto de body */
+
+}
+#todo{
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    position: relative;
+    background: var(--color-blanco);
+}
+#header{
+display: block;
+width: 100%;
+position: relative;
+}
+#valores i {
+    color: var(--color-negro);
+    border-radius: 50%;
+    border: solid 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+}
+.altoheader{
+    height: 144px !important;
+}
+
+.barra-azul{
+    min-height: 34px;
+    background-color: #1565c0;
+}
+
+.logo{
+    vertical-align: middle;
+    padding-top: 26px;
+}
+.banner{
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+.descripcion-ban{
+    max-width: 500px;
+    left: 15%;
+    position: absolute;
+    top: 30%;
+}
+.fnt-weight500{
+    font-weight: 500px;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color1);;
+}
+a{/* Hipervínculo */
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color1);
+    text-decoration: none; /* Para que no se muestren subrayados los hipervínculos */
+}
+a:hover{/* Es el estado al pasar el puntero del mouse sobre el objeto */
+    color: var(--color2);
+    text-decoration: underline;
+}
+
+
+img{
+    display: block; /* Así desaparece el espacio debajo de las imágenes */
+}
+
+h1, h2, h3, h4, h5, h6{/* Separado por comkas definimos una regla pra varios objetos */
+    margin: 0;/* Elimina el margen por defecto de los encabezados */
+}
+
+h1{
+    font-size: 70px;
+    letter-spacing: -1px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+h3{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 0.95em;
+}
+h4{
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+#main-header{/* Para definir una regla de estilo para un objeto por su id empieza con # */
+    background-color: var(--color-blanco);
+}
+#main-header p{/* El espacio indica dentro de */
+    margin-bottom: 0;
+}
+#historia{
+    background-color: var(--color3);
+    color: var(--color-blanco);
+    margin-top: 200px;
+}
+#historia p{
+    text-align: justify;
+    padding-top: 15px;
+}
+#banner{
+    background-image: url("../images/resident1.png");
+    background-size: cover;/* Para que siempre la imagen cubra toda la caja */
+    background-position: right 80%;
+    height: 496px;
+    padding: 10%;
+    background-color: var(--color7);
+}
+#juegos{
+    background-color: var(--color-blanco)
+}
+#juegos .col{
+    background-color: #000000;
+    border: solid 5px #DB004C;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 15px;
+    /* box-shadow:0px 5px 10px rgb(0 0 0 /20%); */
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2); 
+
+}
+#conferencia{
+    background-color: var(--color5);
+    color: var(--color-negro);
+}
+#conferencia a{
+    color: var(--color3);
+}
+#conferencia a:hover{
+    color: var(--color4);
+}
+#imagen-conferencia{
+    margin-top: -50px;
+}
+#nosotros{
+    background-color: var(--color2);
+    color: var(--color-blanco);
+}
+#nosotros p{
+    text-align: justify;
+    padding-top: 15px;
+}
+#sinopsis{
+    background-color: var(--color7);
+    color: var(--color-gris-claro);
+}
+
+#cursos{
+    background-color: var(--color4);
+    color: var(--color-blanco);
+}
+#cursos .col{
+    /* border: estilo, grosor, color */
+    /* border: solid 10px #FFFFFF44; */  
+    /* RGBA en hexadecimal La última pareja es alpha (opacidad/transparencia) */ 
+
+    border: solid 10px rgba(255, 255, 255, 0.25);
+    /* RGBA en decimal (Alpha es el último dígito varía entre 0 y 1) */
+    
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 15px;
+    border-radius: 10px;/* Radio de las esquinas */
+}
+#colaboradores{
+    background-color: var(--color-blanco);
+    text-align: center;
+}
+#colaboradores h3{
+    margin-top: 15px;
+}
+#colaboradores img{
+    border-radius: 50%;
+    filter: grayscale(0.8);/* Filtro para escala de grises */
+    transition: .5s all ease-in-out;
+}
+#colaboradores img:hover{
+    filter: grayscale(0);
+}
+#proyectos{
+    background-color: var(--color1);
+    color: var(--color-negro);
+}
+#personajes{
+    background-color: var(--color6);
+    
+}
+#personajes img{
+    margin-bottom: 30px;
+}
+#paisajes{
+    background-color: var(--color6);
+}
+#main-footer{
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-claro);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+#redes{
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color3);
+    line-height: 0.9em;
+    text-align: left;
+}
+.container{/* Para definir una regla de estilo para un objeto por su id empieza con . 
+    Una clase se puede asignar a varios objetos
+    */
+    max-width: 1200px; /* ancho máximo */
+
+    /* Al ser ambos márgenes automáticos son iguales y se ve centrado */
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container h1{
+    text-align: center;
+    padding-top: 398px;
+    color: var(--color5);
+    text-shadow: 0 0 8px #000000a3;
+}
+
+/* .container p{
+    color: var(--color5);
+    text-align: center;
+    margin-top: -54px;
+} */
+
+.padded{
+    /* padding es la distancia del borde hacia dentro */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.row{
+    display: flex; /* Acomoda los objetos que contiene uno al costado del otro */
+
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row p{
+    text-align: justify;
+}
+.col{
+    /* para que los objetos tengan el mismo ancho si utilizan la misma clase col */
+    flex-basis: 0;
+    flex-grow: 1;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    box-sizing: border-box;/* Para que el padding no incremente el ancho */
+}
+
+.col-25{
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.col-33{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+.col-50{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-66{
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+
+.alinear-verticalmente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mega-texto{
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 0.9em;/* em es una medida porcentual respecto al tamaño de la letra */
+}
+.texto-importante{
+    color: var(--color5);
+    font-style: italic;
+}
+#anuncio{
+    background-image: url('../images/seguro.jpg');
+    background-size: cover;
+    text-align: right;
+    color: var(--color-negro);
+    background-attachment: fixed;/* Para que la imagen se quede fija respecto al navegador */
+}
+
+.foto-contenedor{
+    position: relative;
+}
+.foto-descripcion{
+    position: absolute;
+    top:0;
+    background-color: rgba(21,101,192,0.8);
+    height: 100%;
+    width: calc(100% - 30px);/* Con calc se hace una operación 
+    de cálculo */
+    padding: 45px;
+    box-sizing: border-box;/* Para que el padding no incremente el ancho */
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    font-size: 100%;
+    text-align: right;
+}
+.foto-descripcion:hover{
+    opacity: 1;
+}
+.btn-green{
+    background-color: var(--color4);
+    color: #fff;
+    padding: 16px 34px;
+    border-radius: 50px;
+    width: max-content;
+    transition: .5s all ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.btn-green:hover{
+    background-color: var(--color5);
+    color: #fff;
+}
+.mrg-top20{
+    margin-top: 20px;
+}
+.mrg-020{
+    margin: 0px 20px;
+}
+.marg-auto{
+    margin: auto;
+}
+.pdg-top40{
+    padding-top: 40px;
+}
+.btn-blue{
+    background-color: var(--color2);
+    color: #fff;
+    padding: 16px 34px;
+    border-radius: 50px;
+    width: max-content;
+    transition: .5s all ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.btn-blue:hover{
+    background-color: var(--color3);
+    color: #fff;
+}
+.boton-vinculo{
+    background-image: linear-gradient(357deg, #101010, #dc0000);
+    color: var(--color-blanco)!important;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: max-content;
+    transition: .5s all ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.boton-vinculo:hover{
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--color2)!important;
+} 
+.img-tren{
+    margin-right: -100px;
+    margin-bottom: -150px;
+}
+.img-ciudad{
+    margin-top: -150px;
+    margin-left: -100px;
+}
+.centro{
+    text-align: center;
+}
+
+.fondo-gris{
+    background-color: #f9f9f9;
+}
+
+.dis-flex{
+    display: flex;
+    align-items: center;
+}
+
+.dis-flex-just{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imagen-azul{
+    background-image: url("../images/isil3.jpg");
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.color-white{
+    color: #fff !important;
+}
+
+.box-center{
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
